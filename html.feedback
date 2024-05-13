@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        #comments div {
+            background-color: #ffffff; 
+            border: 1px solid #ddd; 
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px; 
+            position: relative;
+        }
+        #commentInput {
+            width: 300px; 
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #5c67f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        button:hover {
+            background-color: #4a54e1; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback</h1>
+    <div id="comments"></div>
+    <input type="text" id="commentInput" placeholder="Deixe seu Feedback..." />
+    <button onclick="addComment()">Enviar</button>
+
+    <script src="comments.js"></script>
+</body>
+</html>
